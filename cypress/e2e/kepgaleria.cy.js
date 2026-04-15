@@ -62,6 +62,7 @@ describe('képgaleria funkciók', () => {
     });
 it('jobb_gomb', function() {
     cy.visit('https://nao529.github.io/kepgaleria/');
+    cy.get('button.jobb').should("have.length",1);
     cy.get('button.jobb').click();
   });
 });
